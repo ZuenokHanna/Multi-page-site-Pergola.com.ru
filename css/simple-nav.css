@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* ╨Ъ╨░╤Б╤В╨╛╨╝╨╕╨╖╨░╤Ж╨╕╤П (╨┐╨╛╤Б╨╗╨╡╨┤╨╜╨╕╨╡ ╤Б╨▓╨╛╨╣╤Б╤В╨▓╨░ ╨▓ ╤Б╨╡╨╗╨╡╨║╤В╨╛╤А╨░╤Е)  */
+/* ╨Ю╤Б╤В╨░╨╗╤М╨╜╨╛╨╣ ╨║╨░╤Б╤В╨╛╨╝ ╨╜╨░ ╨▓╨░╤И╨╡ ╤Г╤Б╨╝╨╛╤В╤А╨╡╨╜╨╕╨╡ */
+.simple-nav {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  top: 0px;
+  box-sizing: border-box;
+  z-index: 1000;
+  min-width: 250px;
+  /* ╤Д╨╛╨╜╨╛╨▓╤Л╨╣ ╤Ж╨▓╨╡╤В ╨╝╨╡╨╜╤О ╨╕ ╨░╨╜╨╕╨╝╨░╤Ж╨╕╤П ╨▓╤Л╨╡╨╖╨┤╨░ */
+  background-color: #263238;
+  transition: all 0.3s 0s ease-out; }
+
+.simple-nav ul li a {
+  display: block;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  /* ╤А╨░╨╖╨╝╨╡╤А╤Л (╨╛╤В╤Б╤В╤Г╨┐╤Л), ╤Ж╨▓╨╡╤В ╤В╨╡╨║╤Б╤В╨░, ╤А╨░╨╝╨║╨░*/
+  padding: 15px 50px 15px 15px;
+  border-bottom: 1px solid #37474F;
+  color: #fff;
+  text-decoration: none; }
+
+.simple-nav ul li a:hover {
+  /* ╤Ж╨▓╨╡╤В ╤Б╤Б╤Л╨╗╨║╨╕ ╨┐╤А╨╕ ╨╜╨░╨▓╨╡╨┤╨╡╨╜╨╕╨╕ */
+  background-color: #37474F; }
+
+/* ╤Б╤В╨░╨╜╨┤╨░╤А╤В╨╜╤Л╨╡ ╤Б╨▓╨╛╨╣╤Б╤В╨▓╨░ */
+.simple-nav-layout {
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: none; }
+
+.simple-nav ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  list-style: none; }
+
+.simple-nav ul li {
+  padding: 0px;
+  color: #fff; }
+
+.simple-nav-left {
+  left: -500px; }
+
+.simple-nav-right {
+  right: -500px; }
+
+.simple-nav-left-show {
+  left: 0px !important; }
+
+.simple-nav-right-show {
+  right: 0px !important; }
+
+.simple-nav-blur {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); }
